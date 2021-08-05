@@ -24,6 +24,16 @@ ul {
     font-weight: 700;
 }
 
+.brand-logo {
+    width: 150px;
+    height: auto;
+}
+
+.brand-logo img {
+    width: 150px;
+    height: auto;
+}
+
 .brand-color {
     color: #FFBB00;
 }
@@ -869,6 +879,12 @@ footer h1 {
 }
 
 @media screen and (max-width: 576px) {
+    header {
+        padding: 0;
+    }
+    .navbar {
+        padding: 0.5rem 0;
+    }
     .navbar-collapse {
         width: 100vw;
     }
