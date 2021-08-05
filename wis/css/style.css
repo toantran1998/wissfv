@@ -205,8 +205,6 @@ header {
     height: 100vh;
     background-color: #000;
     z-index: 9999;
-    /* animation: nav-move 1.5s;
-    -webkit-animation: nav-move 1.5s; */
 }
 
 .navbar-collapse .nav-link {
@@ -867,5 +865,11 @@ footer h1 {
     .lastest-posts,
     .application-product {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar-collapse {
+        width: 100vw;
     }
 }
