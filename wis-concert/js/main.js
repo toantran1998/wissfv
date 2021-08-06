@@ -29,4 +29,15 @@ $(document).ready(function() {
         if (div.classList.contains('show'))
             $('.close-icon').trigger("click");
     });
+
+    //Schedule picker 
+    $('.btn-schedule').click(function() {
+        var $target = $(this).data('target');
+        var prevBtnActive = document.getElementsByClassName("btn-schedule-active")[0];
+        prevBtnActive.classList.remove("btn-schedule-active");
+        var prevScheduleActive = document.getElementsByClassName("schedule-active")[0];
+        prevScheduleActive.classList.remove("schedule-active")
+        $(this).addClass("btn-schedule-active");
+        $($target).addClass("schedule-active");
+    });
 });

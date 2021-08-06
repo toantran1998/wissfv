@@ -150,6 +150,16 @@ header {
     color: inherit;
 }
 
+.nav-expand ul li a:hover {
+    color: #FFBB00;
+    background: none;
+}
+
+.nav-drop svg {
+    width: 13px;
+    height: 13px;
+}
+
 .nav-expand .nav-link {
     padding-left: 15px !important;
     padding-right: 15px !important;
@@ -209,6 +219,11 @@ header {
 
 .sticky-header .nav-expand ul {
     color: #000;
+}
+
+.sticky-header .nav-expand ul li a:hover {
+    color: #6600FF;
+    background: none;
 }
 
 .sticky-header #cart svg {
