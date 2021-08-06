@@ -73,6 +73,31 @@ ul {
     border-radius: 30px;
 }
 
+.my-btn-reverse a {
+    color: inherit;
+    font-weight: 500;
+}
+
+.my-btn-reverse {
+    color: #fff;
+    padding: 11px 40px;
+    background-color: #FFBB00;
+    border: 2px solid #FFBB00;
+    outline-color: #FFBB00;
+    box-shadow: none;
+    border-radius: 30px;
+}
+
+.my-btn-reverse:hover,
+.my-btn-reverse:active,
+.my-btn-reverse:visited,
+.my-btn-reverse:focus {
+    color: #FFBB00;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 30px;
+}
+
 header,
 body,
 footer {
@@ -639,6 +664,50 @@ header {
     background: #888;
 }
 
+.event-searching form {
+    margin-top: 6rem;
+}
+
+.event-searching .form-write {
+    column-gap: 10px;
+}
+
+.event-searching .form-write div {
+    width: 19%;
+}
+
+.event-searching .form-write button {
+    padding: 13px 25px;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.event-searching .form-write input,
+.event-searching .form-write select {
+    background: transparent;
+    color: #fff;
+    border-color: #fff;
+    padding: 13px 25px;
+    font-size: 13px;
+    height: 50px;
+    width: 100%;
+    margin-right: 30px;
+}
+
+.event-searching form input::placeholder,
+.event-searching .form-write select::placeholder {
+    color: #fff;
+}
+
+.event-searching .form-write option {
+    color: #333;
+}
+
+.event-searching .form-write option:hover {
+    color: #FFBB00;
+}
+
 .mini-cat-list {
     display: flex;
     flex-direction: row;
@@ -990,6 +1059,9 @@ footer h1 {
     .concert-features-item {
         width: 48%;
     }
+    .event-searching .form-write div {
+        width: 32%;
+    }
     .design-grid-container {
         grid-template-columns: auto auto;
     }
@@ -1006,6 +1078,12 @@ footer h1 {
         width: 100vw;
     }
     .concert-features-item {
+        width: 90%;
+    }
+    .event-searching .form-write {
+        justify-content: center;
+    }
+    .event-searching .form-write div {
         width: 90%;
     }
     .design-grid-container {
