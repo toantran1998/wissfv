@@ -822,6 +822,47 @@
             margin-top: 8rem;
         }
         
+        .ticket-features div {
+            font-size: 13px;
+            color: #888;
+        }
+        
+        .ticket-type {
+            font-size: 16px;
+        }
+        
+        .ticket-price {
+            font-size: 39px;
+        }
+        
+        .ticket-features div::before {
+            content: "\f058";
+            display: inline-block;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            font-size: inherit;
+            text-rendering: auto;
+            margin-right: 10px;
+            color: #FFBB00;
+        }
+        
+        .ticket-quantity {
+            width: 205px;
+        }
+        
+        .ticket-quantity .dropdown {
+            width: 100%;
+            border: 1px solid #888;
+            border-radius: 5px;
+            padding: 11px 17px;
+            color: #888;
+        }
+        
+        .ticket-item button {
+            width: 205px;
+            border-radius: 5px;
+        }
+        
         .newsletter {
             background: url(../images/section-1.JPG) center no-repeat;
             background-size: cover;
