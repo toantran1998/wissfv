@@ -20,6 +20,10 @@ ul {
     padding: 6rem 0;
 }
 
+.bold-weight {
+    font-weight: 600;
+}
+
 .bolder-weight {
     font-weight: 700;
 }
@@ -665,6 +669,106 @@ header {
 }
 
 
+/* ABOUT US PAGE */
+
+.aboutus-banner {
+    position: relative;
+    background: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: auto;
+}
+
+.aboutus-banner::before {
+    position: absolute;
+    content: '';
+    display: block;
+    background: url(../images/breadcrumbs-bg.jpg) center no-repeat;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.aboutus-banner .container {
+    margin-top: 3rem;
+}
+
+.slug-page {
+    margin-top: 1rem;
+}
+
+.slug-page a:hover {
+    color: #FFBB00;
+}
+
+.current-page {
+    color: #FFBB00;
+    border-bottom: 3px solid #FFBB00;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.concert-features {
+    margin-top: 5rem;
+}
+
+.concert-features-item {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.concert-features-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFBB00;
+    margin: 1.5rem 0 1rem;
+}
+
+.concert-features-info {
+    font-size: 14px;
+    color: #888;
+}
+
+.my-icon {
+    background-color: #fff;
+    border: 1px solid #FFBB00;
+    border-radius: 50%;
+    width: 115px;
+    height: 115px;
+    position: relative;
+}
+
+.my-icon svg {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    color: #FFBB00;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.my-icon:hover {
+    background-color: #FFBB00;
+    border: none;
+}
+
+.my-icon:hover svg {
+    color: #fff;
+}
+
+.design-grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px 10px;
+    margin: 0 20px;
+}
+
+
 /* FOOTER */
 
 footer {
@@ -837,6 +941,12 @@ footer h1 {
     padding: 2rem 0;
 }
 
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
 @media screen and (min-width: 1366px) {
     .container {
         max-width: 1300px;
@@ -877,6 +987,12 @@ footer h1 {
     .application-product {
         width: 100%;
     }
+    .concert-features-item {
+        width: 48%;
+    }
+    .design-grid-container {
+        grid-template-columns: auto auto;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -888,5 +1004,11 @@ footer h1 {
     }
     .navbar-collapse {
         width: 100vw;
+    }
+    .concert-features-item {
+        width: 90%;
+    }
+    .design-grid-container {
+        grid-template-columns: auto;
     }
 }

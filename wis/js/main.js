@@ -5,7 +5,7 @@ document.getElementsByTagName('head')[0].appendChild(script);
 
 $(document).ready(function() {
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
+        if (window.scrollY > 200) {
             $('header').removeClass("transparent-header")
             $('header').addClass("sticky-header");
             document.getElementById("brand-logo").src = './images/black-logo.jpg';
