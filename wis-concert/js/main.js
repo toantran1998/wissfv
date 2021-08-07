@@ -40,4 +40,36 @@ $(document).ready(function() {
         $(this).addClass("btn-schedule-active");
         $($target).addClass("schedule-active");
     });
+
+    //Counter count
+    // $('.count-number').each(function() {
+    //     $(this).prop('Counter', 0).animate({
+    //         Counter: $(this).text()
+    //     }, {
+    //         duration: 2000,
+    //         easing: 'swing',
+    //         step: function(now) {
+    //             $(this).text(Math.ceil(now));
+    //         }
+    //     });
+    // });
+
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    $('.img-popup').click(function() {
+        console.log(this);
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    });
+
+    var span = document.getElementsByClassName("close")[0];
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
 });
