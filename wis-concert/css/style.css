@@ -1536,6 +1536,14 @@
             }
             .gallery-grid {
                 grid-template-columns: auto auto;
+                gap: 0;
+                justify-items: center;
+            }
+            .modal-content {
+                max-width: 90%;
+            }
+            .post-item {
+                width: 90%;
             }
         }
         
@@ -1611,5 +1619,12 @@
             }
             .gallery-grid {
                 grid-template-columns: auto;
+                justify-items: center;
+            }
+            .modal-content {
+                max-width: 100%;
+            }
+            .contact-us form {
+                width: 80%;
             }
         }
