@@ -1286,6 +1286,13 @@
         .form-check input:checked~.my-checkbox:after {
             display: block;
         }
+        
+        #map {
+            height: 100vh;
+            /* The height is 400 pixels */
+            width: 100vw;
+            /* The width is the width of the web page */
+        }
         /* FOOTER */
         
         footer {
