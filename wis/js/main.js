@@ -39,4 +39,27 @@ $(document).ready(function() {
         if (div.classList.contains('show'))
             $('.close-icon').trigger("click");
     });
+
+    $('.main-slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: $('.btn-prev'),
+        nextArrow: $('.btn-next'),
+        responsive: [{
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+        ]
+    });
 });

@@ -82,7 +82,20 @@ $(document).ready(function() {
         modal.style.display = "none";
     }
 
-    // Initialize and add the map
+    $('.main-slider').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        prevArrow: $('.btn-prev'),
+        nextArrow: $('.btn-next'),
+        responsive: [{
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }, ]
+    });
 
 
 

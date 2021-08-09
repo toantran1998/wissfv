@@ -569,6 +569,40 @@ header {
     left: -20px;
 }
 
+.main-slider {
+    margin: 0 -10px;
+}
+
+.event-list-item {
+    margin: 0 10px;
+}
+
+.slider-controller {
+    margin-top: 2rem;
+}
+
+.slider-controller button,
+.slider-controller div {
+    border: 1px solid rgba(51, 51, 51, .15);
+    padding: 5px 10px;
+}
+
+.slider-controller button:focus {
+    box-shadow: none;
+}
+
+.slider-controller button svg {
+    width: 17px;
+    height: 17px;
+    color: #888;
+}
+
+.slider-controller div {
+    color: #888;
+    font-size: 17px;
+    margin: 0 1rem;
+}
+
 .grid-cat {
     display: flex;
     flex-wrap: wrap;
