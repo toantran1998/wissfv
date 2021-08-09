@@ -105,7 +105,7 @@ footer {
 }
 
 header {
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem;
     z-index: 999;
     width: 100%;
 }
@@ -158,6 +158,10 @@ header {
 .nav-drop svg {
     width: 13px;
     height: 13px;
+}
+
+.nav-link {
+    font-weight: 500;
 }
 
 .nav-expand .nav-link {

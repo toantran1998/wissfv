@@ -105,7 +105,7 @@
         }
         
         header {
-            padding: 1.5rem 1rem;
+            padding: 1rem 1rem;
             z-index: 999;
             width: 100%;
         }
@@ -136,6 +136,11 @@
         
         .navbar-brand .black-logo {
             display: none;
+        }
+        
+        .nav-link {
+            font-size: 14px;
+            font-weight: 500;
         }
         
         .nav-expand ul {
@@ -367,6 +372,7 @@
         
         .banner-main-content {
             position: relative;
+            margin-top: 4rem;
         }
         
         .banner-bg-content {
@@ -1289,6 +1295,73 @@
         
         #map {
             height: 100vh;
+            width: 100%;
+        }
+        /* CONTACT US 1 */
+        
+        .contactus-1-cont {
+            width: 65%;
+            margin: auto;
+        }
+        
+        .contact-us-info {
+            font-size: 14px;
+            margin: 5rem 0;
+        }
+        
+        .contactus-1 form {
+            width: 100%;
+            margin-top: 2rem;
+        }
+        /* CONTACT US 2 */
+        
+        .contactus-2-banner {
+            position: relative;
+            background: rgba(0, 0, 0, .4);
+            width: 100%;
+            height: auto;
+        }
+        
+        .contactus-2-banner::before {
+            position: absolute;
+            content: '';
+            display: block;
+            background: url(../images/contactus-bg.jpg) center no-repeat;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        
+        .contactus-2-banner .container {
+            margin-top: 3rem;
+        }
+        
+        .slug-page {
+            margin-top: 1rem;
+        }
+        
+        .slug-page a:hover {
+            color: #FFBB00;
+        }
+        
+        .current-page {
+            color: #FFBB00;
+            border-bottom: 3px solid #FFBB00;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        
+        .contactus-2-cont {
+            width: 65%;
+            margin: auto;
+        }
+        
+        .contactus-2-cont>div {
+            font-size: 14px;
+        }
+        
+        .contactus-2 form {
             width: 100%;
         }
         /* FOOTER */
